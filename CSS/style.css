@@ -1,0 +1,450 @@
+/* common css section start */
+*{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    width: 1200px;
+    margin: auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+img{
+    display: block;
+}
+
+ul{
+    list-style-type: none;
+}
+/* common css section end */
+
+
+/* nav css section start */
+nav{
+    background-color: #252d2f;
+    text-align: justify;
+}
+
+nav div.row{
+    align-items: center;
+}
+
+nav .logo{
+    width: 25%;
+}
+
+nav div.menu{
+    width: 75%;
+}
+
+nav div .menu ul{
+    justify-content: flex-end;
+}
+
+nav .menu ul li a{
+    color: white;
+    text-transform: uppercase;
+    padding: 29px 20px;
+    font-size: 16px;
+    font-weight: 700;
+    display: inline-block;
+    transition: 0.8s;
+    position: relative;
+    z-index: 1;
+}
+
+nav .menu ul li a::after{
+    content: '';
+    width: 100%;
+    height: 0;
+    background-color: yellow;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: 0.58s;
+    z-index: -1;
+    transform: scale(0) rotate(20deg);
+    transform-origin: top;
+}
+
+nav .menu ul li a:hover::after,
+nav .menu ul li a.active::after{
+    height: 100%;
+    background: orangered;
+    transform: scale(1) rotate(0);
+}
+
+/* nav css section end */
+
+/* bannar section css start */
+#bannar{
+    background-image: url(../img/bannar.jpg);
+    background-size: cover;
+    height: 1300px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+#banner::before{
+    content: '';
+    background-color: whitesmoke;
+    height: 100%;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#bannar .container{
+    margin: auto;
+}
+
+#bannar h1{
+    color: white;
+    padding: 20px 0;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    margin-top: 200px;
+    margin-left: 220px;
+    margin-right: 220px;
+    font-size: 60px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+#bannar a{
+    color: white;
+    /* display: block; */
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+    padding: 20px 23px;
+}
+
+
+/* banner section css end */
+
+/* bannar down section css start */
+
+#bottom .child1{
+    width: 33%;
+     /* padding: 50px 60px; */
+     margin: 80px 0;
+}
+
+#bottom .child1 .tittle{
+    font-size: 30px;
+    font-weight: 700;
+    color: #566366;
+    margin: 28px 0;
+    text-transform: uppercase;
+}
+
+#bottom .child1 .p1{
+    font-size: 18px;
+    color: #919191;
+    margin: auto;
+}
+
+/* bannar down section end */
+
+/* about section css start */
+
+
+
+#about .photo{
+    width: 35%;
+}
+
+ #about .photo .img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+} 
+
+ #about .photo .img2{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#about .about_icon{
+    width: 15%;
+}
+
+#about .about_info{
+    width: 65%;
+}
+
+#about .container{
+    width: 65%;
+    background-color: #f1f1f1;
+    height: 754px;
+    padding: 100px 200px 100px 100px;
+}
+
+#about .container p{
+    line-height: 20px;
+}
+
+#about .about_child{
+    width: 50%;
+    margin-bottom: 20px;
+}
+#about .info .about{
+    font-weight: 700;
+    padding-bottom: 40px;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #566366;
+}
+
+#about .info .p2{
+    margin-bottom: 20px;
+    color: #919191;
+}
+
+#about .about_child h4{
+    font-size: 22px;
+    color: #566366;
+    margin: 25px 0;
+    text-transform: uppercase;
+}
+
+#about .about_child .p3{
+    width: 243px;
+    margin-top: 30px;
+    margin-right: 20px;
+    font-size: 18px;
+    color: #919191;
+    padding-right: 20px;
+}
+
+/* about section css end */
+
+/* skill section css start */
+#skill .skill_info{
+    width: 50%;
+    padding: 100px 50px;
+}
+
+#skill .info_skill1{
+    width: 50%;
+    padding: 100px 150px;
+}
+
+#skill .inside{
+    width: 100%;
+    background-color: #f1f1f1;
+}
+
+#skill .outside{
+    text-align: right;
+    padding: 2px 0;
+}
+
+#skill .outside1{
+    width: 90%;
+   background-color: #2ecc71;
+}
+
+#skill .outside2{
+    width: 80%;
+   background-color: #2ecc71;
+}
+
+#skill .outside3{
+    width: 90%;
+   background-color: #2ecc71;
+}
+
+#skill .outside4{
+    width: 70%;
+   background-color: #2ecc71;
+}
+
+#skill .h4_title{
+    font-size: 22px;
+    font-weight: 700;
+    color: #566366;
+    text-transform: uppercase;
+    padding: 5px 0;
+    padding-top: 30px;
+}
+
+
+#skill .skill_info .skills{
+    font-size: 30px;
+    font-weight: 700;
+    color: #566366;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+
+#skill .skill_info .p4{
+    font-size: 16px;
+    color: #919191;
+    padding-bottom: 22px;
+    line-height: 25px;
+}
+
+#skill .skill_info .p5{
+    font-size: 16px;
+    color: #919191;
+    padding-bottom: 60px;
+    line-height: 25px;
+}
+
+#skill .skill_info .contact_ancor{
+    color: #2ecc71;
+    font-size: 18PX;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 19px 36px;
+    border-right: 2PX solid #2ecc71;
+    border-left: 2PX solid #2ecc71;
+    border-top: 2PX solid #2ecc71;
+    border-bottom: 2PX solid #2ecc71;
+}
+/* skill section css section end */
+
+/* resume section css section start */
+#resume{
+   background-color: #f1f1f1;
+    height: 442px;
+}
+
+#resume .resume_info{
+    font-size: 30px;
+    font-weight: 700;
+    color: #566366;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 100px;
+}
+
+#resume .p6{
+    font-size: 18px;
+    color: #919191;
+    text-align: center;
+    width: 1049px;
+    margin: auto;
+    padding-top: 40px;
+    padding-bottom: 80px;
+    line-height: 28px;
+}
+
+#resume .resume_ancore{
+    display: block;
+    text-align: center;
+    margin: auto;
+    width: 245px;
+    color: #2ecc71;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-left: 2px solid #2ecc71;
+    border-top: 2px solid #2ecc71;
+    border-right: 2px solid #2ecc71;
+    border-bottom: 2px solid #2ecc71;
+    padding: 20px 20px;
+}
+/* resume css section end */
+
+/* education css section start */
+
+
+
+#education .education_info{
+    width: 50%;
+    padding: 100px 50px;
+}
+
+#education .info_education1{
+    width: 50%;
+    padding: 100px 150px;
+    /* border-bottom: 2px solid #919191; */
+   
+}
+
+
+#education .education_info .educations{
+    font-size: 30px;
+    font-weight: 700;
+    color: #566366;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+
+#education .education_info .p4{
+    font-size: 16px;
+    color: #919191;
+    padding-bottom: 22px;
+    line-height: 25px;
+}
+
+#education .education_info .p5{
+    font-size: 16px;
+    color: #919191;
+    padding-bottom: 60px;
+    line-height: 25px;
+}
+
+#education .info_education1 .education_child .diploma{
+    padding-top: 40px;
+    padding-bottom: 10px;
+    font-size: 22px;
+    font-weight: 700;
+    color: #566366;
+    text-transform: uppercase;
+}
+
+#education .info_education1 .education_child .p7{
+    padding-bottom: 8px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #919191;
+}
+
+#education .info_education1 .education_child .p8{
+    background-color: #2ecc71;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    width: 71px;
+    text-align: center;
+    padding: 5px 4px;
+     margin-bottom: 25px;
+}
+
+#education .info_education1 .education_child .p9{
+    margin-top: 25px;
+    font-size: 18px;
+    color: #919191;
+    
+}
+
+
+
